@@ -7,6 +7,8 @@ const PORT = process.env.PORT || 4000; // Puerto de la app
 const items = require('./routes/items');
 const item = require('./routes/item');
 
+// const index = require('./idnex.html');
+
 // Habilitar CORS
 app.use(cors());
 
@@ -17,9 +19,11 @@ var myLogger = function (req, res, next) {
 
 app.use(myLogger);
 
+app.use(express.static('./'));
+
 // Definir la pagina principal
 app.get('/', (req, res) => {
-  res.send('El servidor Express esta corriendo');
+  res.render('index.html');
 });
 
 // Endpoint para productos

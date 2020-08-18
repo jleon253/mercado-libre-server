@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+    <title>MercadoLibre Server - John Leon</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+      .padding {
+        padding: 10px 5px;
+      }
+
+      .margin {
+        margin: 10px 5px;
+      }
+
+    </style>
+  </head>
+
+  <body class="yellow accent-3">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 white z-depth-1">
+          <h4 class="center-align">Node.JS and Express Server running for <br /> Mercado-Libre-Front</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 white z-depth-1 center-align padding">
+          <h6><b>Mercado-Libre-Front</b></h6>
+          <a href="https://github.com/jleon253/mercado-libre-front"
+            target="_blank">Link to GitHub</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 white z-depth-1 center-align padding">
+          <h6><b>End Points:</b></h6>
+          <ul class="collection">
+            <li class="collection-item"> <b>/</b> : Main</li>
+            <li class="collection-item"><b>/api/items?q=product</b> : Returns all products that match with the 'product' word.
+            </li>
+            <li class="collection-item"><b>/api/items?q=product&limit=5</b> : Returns all products that match with the
+              'product' word. The limits
+              products by default is 5 (if not entered), but is costumizable.</li>
+            <li class="collection-item"><b>/api/items/:id</b> : Return Detail and Description of product that match with the
+              'id-product' parameter.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 center-align padding">
+          <a href="https://github.com/jleon253" target="_blank" class="waves-effect waves-light btn blue darken-3">
+            <i class="material-icons left">perm_contact_calendar</i>By jleon253</a>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
