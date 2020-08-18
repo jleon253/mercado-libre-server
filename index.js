@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 
 const app = express(); // Se crea el servidor
-const port = process.env.port || 4000; // Puerto de la app
+const PORT = process.env.PORT || 4000; // Puerto de la app
 
 const items = require('./routes/items');
 const item = require('./routes/item');
@@ -29,6 +29,6 @@ app.use('/api/items', items);
 app.use('/api/items', item);
 
 // Arrancar la app
-app.listen(port, '0.0.0.0', () => {
-  console.log(`Puerto de servidor: ${port}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Puerto de servidor: ${PORT}`);
 });
